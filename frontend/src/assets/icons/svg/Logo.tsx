@@ -1,14 +1,14 @@
 
 interface logoProps {
   className: string;
-  fillColor: string;
+  // fillColor: string;
 }
-export default function logo({ className, fillColor }: logoProps) {
+export default function logo({ className, /*fillColor*/ }: logoProps) {
   return (
     <svg className={className} xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
 
-      fill={fillColor}
+      // fill={fillColor}
       viewBox="-680 -1030 300 180">
       <g>
         <path d="M -430 -910 L -430 -910 C -424.481 -910 -420 -905.519 -420 -900 L -420 -900 C -420 -894.481 -424.481 -890 -430 -890 L -430 -890 C -435.519 -890 -440 -894.481 -440 -900 L -440 -900 C -440 -905.519 -435.519 -910 -430 -910 Z" />

@@ -1,5 +1,5 @@
 .top-ui {
-    height: 36px;
+    height: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,30 +9,31 @@
         display: flex;
         align-items: center;
         box-sizing: border-box;
-        min-width: 1080px;
+        min-width: 1300px;
         max-width: 100%;
 
         .logo-link {
             height: inherit;
             display: inline-flex;
+            align-items: center;
 
-
-            .logo {
+            .logo-svg {
                 display: flex;
                 align-self: center;
-                height: 28px;
-                padding-left: 5px;
-                padding-right: 5px;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                height: 24px;
+                padding-left: 7px;
+                padding-right: 7px;
+                fill: var(--yellow-c-m);
+
             }
 
             .title {
+                max-height: 30px;
                 display: flex;
                 align-items: center;
                 margin-top: 0;
                 margin-bottom: 0;
-                font-size: 20pt;
+                font-size: 24pt;
                 font-weight: 500;
             }
         }
@@ -40,10 +41,29 @@
 
 
         .button-link {
-            display: inline-block;
+            display: flex;
+            height: inherit;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .svg {
+                fill: var(--gray-c-l);
+                height: 20px;
+                width: 20px;
+                transition:
+                    fill 0.2s;
+
+                &:hover {
+                    fill: var(--light-c);
+                }
+
+            }
         }
 
-        .about {
+        .notifications {
             flex-grow: 1;
         }
 

@@ -1,27 +1,24 @@
-import { Logo } from "@icons/SvgAll";
+import { Logo, Keyboard, Crown, About, Settings } from "@icons/SvgAll";
 
 export function TopUI() {
     return (
         <header className="top-ui">
             <div className="top-ui-content">
                 <a className="logo-link">
-                    <Logo
-                        className={"logo"}
-                        fillColor={"#E2B714"}
-                    />
+                    <Logo className={"logo-svg"} />
                     <h1 className="title"> monkeytype </h1>
                 </a>
                 <a className="button-link start-test">
-                    1234
+                    <Keyboard className="svg" />
                 </a>
                 <a className="button-link leaderboards">
-                    lorem100
+                    <Crown className="svg" />
                 </a>
                 <a className="button-link about">
-                    467
+                    <About className="svg" />
                 </a>
                 <a className="button-link settings">
-                    settings
+                    <Settings className="svg" />
                 </a>
 
             </div>
