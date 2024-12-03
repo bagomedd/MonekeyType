@@ -1,34 +1,53 @@
 .top-ui {
     height: 36px;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
+    justify-content: center;
 
 
-    .logo-link {
-        height: inherit;
-        display: inline-flex;
+    .top-ui-content {
+        display: flex;
         align-items: center;
+        box-sizing: border-box;
+        min-width: 1080px;
+        max-width: 100%;
 
-        .logo {
-            height: 28px;
+        .logo-link {
+            height: inherit;
+            display: inline-flex;
+
+
+            .logo {
+                display: flex;
+                align-self: center;
+                height: 28px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 20pt;
+                font-weight: 500;
+            }
         }
 
-        .logo-text {
-            display: inline;
+
+
+        .button-link {
+            display: inline-block;
         }
+
+        .about {
+            flex-grow: 1;
+        }
+
+
+
     }
-
-    .button-link {
-        display: inline-block;
-
-        .settings {
-            float: right;
-            right: 0;
-
-        }
-    }
-
 }

@@ -1,9 +1,21 @@
 :root {
+
     --gray-c-m: #323437;
     --gray-c-l: #646669;
     --light-c: #D1D0D5;
     --gray-c-d: #2C2E31;
     --yellow-c-m: #E2B714;
+
+
+
+    --default-font: 'Inter';
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('@fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
 }
 
 body {

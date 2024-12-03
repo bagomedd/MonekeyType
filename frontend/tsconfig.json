@@ -16,6 +16,9 @@
       "@styles/*": [
         "src/assets/styles/*"
       ],
+      "@fonts/*": [
+        "src/assets/fonts/*"
+      ],
     }
   },
   "include": [
