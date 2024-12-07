@@ -1,8 +1,7 @@
 @import "@styles/global.css";
 
 .layout {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    display: block;
     width: 100vw;
     height: 100vh;
     background-color: var(--gray-c-m);

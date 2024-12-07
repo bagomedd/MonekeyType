@@ -1,18 +1,32 @@
 .top-ui {
+    color: var(--light-c);
+    padding-top: 36px;
     height: 30px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
 
 
+
     .top-ui-content {
+
         display: flex;
-        align-items: center;
-        box-sizing: border-box;
+        /*align-items: center;
+        box-sizing: border-box; */
         min-width: 1300px;
-        max-width: 100%;
+
+        .group {
+            display: flex;
+            align-items: center;
+
+            &.left {
+                flex-grow: 1;
+            }
+        }
 
         .logo-link {
+            color: inherit;
+            text-decoration-line: inherit;
             height: inherit;
             display: inline-flex;
             align-items: center;
@@ -23,8 +37,7 @@
                 height: 24px;
                 padding-left: 7px;
                 padding-right: 7px;
-                fill: var(--yellow-c-m);
-
+                fill: var(--accent-c-m);
             }
 
             .title {
@@ -35,12 +48,18 @@
                 margin-bottom: 0;
                 font-size: 24pt;
                 font-weight: 500;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+
+
             }
         }
 
 
 
         .button-link {
+
             display: flex;
             height: inherit;
             justify-content: center;
@@ -48,23 +67,51 @@
             height: 30px;
             padding-left: 10px;
             padding-right: 10px;
+            cursor: pointer;
+            fill: var(--gray-c-l);
+            transition: fill 0.2s,
+                color 0.2s;
 
             .svg {
-                fill: var(--gray-c-l);
                 height: 20px;
                 width: 20px;
-                transition:
-                    fill 0.2s;
+            }
 
-                &:hover {
-                    fill: var(--light-c);
+            &:hover {
+                fill: var(--light-c);
+                color: var(--light-c) !important;
+
+                .level {
+                    background-color: var(--light-c) !important;
+                }
+            }
+
+            &.profile {
+                font-weight: 400;
+                font-size: 9pt;
+                color: var(--gray-c-l);
+
+                .profile-name {
+                    padding-left: 5px;
+                    padding-right: 5px;
+
+
                 }
 
+                .level {
+                    font-size: 7pt;
+                    color: var(--gray-c-m);
+                    transition:
+                        background-color 0.2s;
+                    background-color: var(--gray-c-l);
+                    margin-left: 5px;
+                    padding-left: 3px;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    padding-right: 3px;
+                    border-radius: 4px;
+                }
             }
-        }
-
-        .notifications {
-            flex-grow: 1;
         }
 
 
